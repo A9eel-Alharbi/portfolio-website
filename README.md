@@ -1,5 +1,5 @@
 learned about the react template 
-also concept like components, props, event handling, hooks, routing, images and data-driven UI.
+also concepts like components, props, event handling, hooks, routing, images and data-driven UI.
 
 # React + Vite
 
