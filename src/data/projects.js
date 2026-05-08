@@ -53,6 +53,18 @@ const projects = [
   },
   {
     id: 6,
+    title: "Full-Stack Reference System",
+    description:
+      "A long-term learning and reference repo mapping frontend, backend, testing, deployment, security, patterns, and full-stack architecture concepts.",
+    techStack: ["React", "FastAPI", "React Router", "PostgreSQL", "JWT", "Architecture", "Reference"],
+    status: "In Progress",
+    image: "/images/Refrence_Repo.png",
+    imageFit: "contain",
+    liveLink: "https://refrence-repo.vercel.app/",
+    link: "https://github.com/A9eel-Alharbi/Refrence_Repo",
+  },
+  {
+    id: 7,
     title: "Portfolio Website",
     description:
       "A multi-page developer portfolio built with React and React Router. Features a dark theme, responsive design, and smooth animations.",

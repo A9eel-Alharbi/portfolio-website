@@ -21,6 +21,7 @@ function Projects() {
             status={project.status}
             image={project.image}
             imageFit={project.imageFit}
+            liveLink={project.liveLink}
             link={project.link}
           />
         ))}

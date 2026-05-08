@@ -119,13 +119,19 @@
     border: 1px solid var(--border);
 }
 
-/* GitHub link */
+/* Links */
+.project-card__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+    margin-top: auto;
+    padding-top: 0.5rem;
+}
+
 .project-card__link {
     display: inline-flex;
     align-items: center;
     gap: 0.45rem;
-    margin-top: auto;
-    padding-top: 0.5rem;
     font-size: var(--text-sm);
     font-weight: 500;
     color: var(--accent);
