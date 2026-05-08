@@ -7,7 +7,7 @@ const projects = [
     techStack: ["HTML", "CSS"],
     status: "Completed",
     image: "/images/landing-page.png",
-    link: null,
+    link: "https://github.com/A9eel-Alharbi/landing-page",
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const projects = [
     techStack: ["JavaScript", "HTML", "CSS"],
     status: "Completed",
     image: "/images/pomodoro.png",
-    link: null,
+    link: "https://github.com/A9eel-Alharbi/Pomodoro-timer",
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const projects = [
     techStack: ["JavaScript", "HTML", "CSS"],
     status: "Completed",
     image: "/images/todo.png",
-    link: null,
+    link: "https://github.com/A9eel-Alharbi/To-Do-App",
   },
   {
     id: 4,
@@ -36,7 +36,8 @@ const projects = [
       "A multi-page developer portfolio built with React and React Router. Features a dark theme, responsive design, and smooth animations.",
     techStack: ["React", "React Router", "JavaScript", "CSS"],
     status: "In Progress",
-    image: "/images/portfolio.png",
+    image: "/images/Portfolio.png",
+    imageFit: "contain",
     link: "https://github.com/A9eel-Alharbi/portfolio-website",
   },
 ];

@@ -20,6 +20,7 @@ function Projects() {
             techStack={project.techStack}
             status={project.status}
             image={project.image}
+            imageFit={project.imageFit}
             link={project.link}
           />
         ))}

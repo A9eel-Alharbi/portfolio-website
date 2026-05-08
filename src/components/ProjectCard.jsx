@@ -22,14 +22,26 @@ function TechBadge({ tech }) {
   );
 }
 
-function ProjectCard({ title, description, techStack = [], status, image, link }) {
+function ProjectCard({
+  title,
+  description,
+  techStack = [],
+  status,
+  image,
+  imageFit = "cover",
+  link,
+}) {
   const isCompleted = status === "Completed";
 
   return (
     <div className="project-card">
       {image && (
         <div className="project-card__image-wrap">
-          <img src={image} alt={`Preview of ${title}`} />
+          <img
+            src={image}
+            alt={`Preview of ${title}`}
+            className={`project-card__image project-card__image--${imageFit}`}
+          />
         </div>
       )}
 
