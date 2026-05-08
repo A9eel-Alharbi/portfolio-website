@@ -95,7 +95,15 @@
     font-size: var(--text-sm);
     color: var(--text-secondary);
     line-height: 1.6;
-    flex: 1;
+}
+
+.project-card__focus {
+    padding-left: 0.8rem;
+    border-left: 2px solid var(--accent);
+    color: var(--text-primary);
+    font-size: var(--text-sm);
+    line-height: 1.55;
+    background: linear-gradient(90deg, var(--accent-glow), transparent);
 }
 
 /* Tech badges */
@@ -103,6 +111,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0.4rem;
+    flex: 1;
+    align-content: flex-start;
 }
 
 .tech-badge {

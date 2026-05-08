@@ -33,6 +33,7 @@ function TechBadge({ tech }) {
 function ProjectCard({
   title,
   description,
+  learningFocus,
   techStack = [],
   status,
   image,
@@ -65,6 +66,10 @@ function ProjectCard({
         </div>
 
         <p className="project-card__desc">{description}</p>
+
+        {learningFocus && (
+          <p className="project-card__focus">{learningFocus}</p>
+        )}
 
         <div className="project-card__tech">
           {techStack.map((tech) => (
