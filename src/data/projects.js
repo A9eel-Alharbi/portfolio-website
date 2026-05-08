@@ -36,6 +36,7 @@ const projects = [
       "A multi-page developer portfolio built with React and React Router. Features a dark theme, responsive design, and smooth animations.",
     techStack: ["React", "React Router", "JavaScript", "CSS"],
     status: "In Progress",
+    image: "/images/portfolio.png",
     link: "https://github.com/A9eel-Alharbi/portfolio-website",
   },
 ];
