@@ -1,10 +1,19 @@
 import "./About.css";
 
 const skills = {
-  Frontend:  ["HTML", "CSS", "JavaScript", "React"],
-  Backend:   ["Python", "FastAPI"],
-  Database:  ["PostgreSQL"],
-  Tools:     ["Git", "Docker"],
+  Languages: ["JavaScript", "Python", "SQL", "Java"],
+  Backend: ["FastAPI", "REST APIs", "Pydantic"],
+  Frontend: ["React", "HTML", "CSS", "React Router"],
+  Database: ["PostgreSQL", "SQLAlchemy", "Supabase"],
+  Tools: ["Git", "GitHub", "VS Code", "Vercel"],
+  Concepts: [
+    "Client-Server Architecture",
+    "CRUD Systems",
+    "State Management",
+    "REST API Integration",
+    "Authentication Flows",
+    "Full-Stack Application Design",
+  ],
 };
 
 function About() {
@@ -16,28 +25,25 @@ function About() {
       </header>
 
       <div className="about-layout animate-fade-up delay-2">
-        {/* Bio */}
         <div className="about-bio">
           <p>
-            I'm a Computer Science student with a focus on building real-world
-            web applications. I care deeply about clean structure, clear logic,
-            and understanding how things work from the ground up — not just
-            making them work.
+            I'm a full-stack developer focused on building real-world web
+            applications with clear structure, reliable backend logic, and
+            usable frontend experiences.
           </p>
           <p>
-            My current focus is on advancing my frontend skills with React and
-            expanding into backend development using Python and FastAPI. I enjoy
-            working on problems that require both technical thinking and good
-            design instincts.
+            My stack includes React, JavaScript, Python, FastAPI, Pydantic,
+            PostgreSQL, SQLAlchemy, Supabase, and REST API integration. I enjoy
+            connecting the full path from database models and API contracts to
+            client-side state and UI behavior.
           </p>
           <p>
-            Outside of coursework, I build personal projects to apply what I
-            learn — from landing pages and productivity tools to full-stack
-            multi-player web applications.
+            I build projects around client-server architecture, CRUD systems,
+            authentication flows, state management, and full-stack application
+            design.
           </p>
         </div>
 
-        {/* Skills */}
         <div className="about-skills">
           <h2 className="about-skills-heading">Skills &amp; Technologies</h2>
           <div className="skills-section">

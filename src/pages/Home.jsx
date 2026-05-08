@@ -1,6 +1,17 @@
 import { Link } from "react-router-dom";
 import "./Home.css";
 
+const coreStack = [
+  "JavaScript",
+  "Python",
+  "FastAPI",
+  "React",
+  "PostgreSQL",
+  "SQLAlchemy",
+  "Supabase",
+  "REST APIs",
+];
+
 function Home() {
   return (
     <section className="hero">
@@ -9,7 +20,7 @@ function Home() {
 
       <div className="hero-content">
         <p className="hero-eyebrow animate-fade-up delay-1">
-          Computer Science Student
+          Full-Stack Developer
         </p>
 
         <h1 className="hero-headline animate-fade-up delay-2">
@@ -17,13 +28,21 @@ function Home() {
         </h1>
 
         <p className="hero-subtitle animate-fade-up delay-3">
-          Frontend developer building clean, structured web applications
-          with{" "}
-          <span className="hero-tech">React</span>,{" "}
-          <span className="hero-tech">JavaScript</span>, and modern tools.
+          I build full-stack web applications with{" "}
+          <span className="hero-tech">React</span> on the frontend,{" "}
+          <span className="hero-tech">FastAPI</span> and{" "}
+          <span className="hero-tech">Pydantic</span> on the backend, and{" "}
+          <span className="hero-tech">PostgreSQL</span> databases powered by
+          SQLAlchemy or Supabase.
         </p>
 
-        <div className="hero-actions animate-fade-up delay-4">
+        <p className="hero-description animate-fade-up delay-4">
+          My work focuses on client-server architecture, CRUD systems, REST API
+          integration, authentication flows, state management, and complete
+          application design from data model to user interface.
+        </p>
+
+        <div className="hero-actions animate-fade-up delay-5">
           <Link to="/projects" className="btn btn-primary">
             View My Work
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -35,9 +54,8 @@ function Home() {
           </Link>
         </div>
 
-        {/* Quick tech row */}
         <div className="hero-stack animate-fade-up delay-5">
-          {["HTML", "CSS", "JavaScript", "React", "Python"].map((t) => (
+          {coreStack.map((t) => (
             <span key={t} className="hero-stack-item">{t}</span>
           ))}
         </div>
