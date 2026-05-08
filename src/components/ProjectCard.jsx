@@ -7,10 +7,15 @@ const techColors = {
   CSS:          "#264de4",
   Python:       "#3776ab",
   FastAPI:      "#009688",
+  Pydantic:     "#e92063",
   PostgreSQL:   "#336791",
+  SQLAlchemy:   "#d71f00",
   Git:          "#f05032",
   Docker:       "#2496ed",
   "React Router": "#ca4245",
+  "REST API":   "#22c55e",
+  Forms:        "#38bdf8",
+  Validation:   "#f59e0b",
 };
 
 function TechBadge({ tech }) {

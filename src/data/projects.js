@@ -31,6 +31,28 @@ const projects = [
   },
   {
     id: 4,
+    title: "Login UI",
+    description:
+      "A React login interface focused on controlled inputs, form validation, error feedback, disabled submissions, and state-driven UI behavior.",
+    techStack: ["React", "JavaScript", "CSS", "Forms", "Validation"],
+    status: "Completed",
+    image: "/images/Login-UI.png",
+    imageFit: "contain",
+    link: "https://github.com/A9eel-Alharbi/Login-UI",
+  },
+  {
+    id: 5,
+    title: "Notes App",
+    description:
+      "A full-stack notes application with a React frontend, FastAPI REST API, Pydantic validation, SQLAlchemy models, and PostgreSQL persistence.",
+    techStack: ["React", "FastAPI", "Pydantic", "SQLAlchemy", "PostgreSQL", "REST API"],
+    status: "Completed",
+    image: "/images/NotesApp.png",
+    imageFit: "contain",
+    link: "https://github.com/A9eel-Alharbi/NotesApp",
+  },
+  {
+    id: 6,
     title: "Portfolio Website",
     description:
       "A multi-page developer portfolio built with React and React Router. Features a dark theme, responsive design, and smooth animations.",
