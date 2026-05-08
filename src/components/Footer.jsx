@@ -20,7 +20,7 @@ function Footer() {
             </svg>
           </a>
           <a
-            href="https://linkedin.com/in/aseel-alharbi"
+            href="https://www.linkedin.com/in/aseel-abdullah-alharbi/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
