@@ -1,0 +1,29 @@
+.not-found {
+    min-height: calc(100vh - 64px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    gap: 1rem;
+}
+
+.not-found-code {
+    font-size: 6rem;
+    font-weight: 700;
+    color: var(--accent);
+    line-height: 1;
+    opacity: 0.25;
+    margin: 0;
+}
+
+.not-found-title {
+    font-size: var(--text-3xl);
+    color: var(--text-primary);
+}
+
+.not-found-sub {
+    color: var(--text-secondary);
+    max-width: 380px;
+}

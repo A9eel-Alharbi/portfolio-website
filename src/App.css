@@ -1,208 +1,104 @@
-/* =========================
-   RESET & BASE
-   ========================= */
+/* =================================================
+   APP LAYOUT
+   ================================================= */
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  background-color: #ffffff;
-  color: #1f2937;
-  line-height: 1.6;
-}
-
-/* =========================
-   HEADER / NAVBAR
-   ========================= */
-
-header {
+.app-layout {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  padding: 1rem 1.5rem;
-  background-color: #ffffff;
-  border-bottom: 1px solid #e5e7eb;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-header > a {
-  font-weight: 600;
-  text-decoration: none;
-  color: #111827;
+.page-content {
+  flex: 1;
 }
 
-.navbar ul {
-  display: flex;
-  gap: 1.5rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar a {
-  text-decoration: none;
-  color: #2563eb;
-  font-weight: 500;
-}
-
-.navbar a:hover {
-  text-decoration: underline;
-}
-
-/* =========================
-   NAVBAR RESPONSIVE
-   ========================= */
-
-@media (max-width: 640px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.75rem;
-  }
-
-  .navbar ul {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-}
-
-/* =========================
-   PAGE LAYOUT
-   ========================= */
+/* =================================================
+   PAGE WRAPPER
+   ================================================= */
 
 .page {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 3rem 1.5rem;
+  padding: 5rem 1.5rem 4rem;
 }
 
-/* Reading width (prevents emptiness) */
-.page > h1,
-.page > p {
-  max-width: 640px;
+.page-header {
+  margin-bottom: 3rem;
 }
 
-/* =========================
-   TYPOGRAPHY
-   ========================= */
-
-h1 {
-  font-size: 2.25rem;
-  margin-bottom: 1.5rem;
-  color: #111827;
-}
-
-h2 {
-  font-size: 1.4rem;
-  margin-top: 3rem;
+.page-header h1 {
   margin-bottom: 0.75rem;
-  color: #111827;
 }
 
-p {
-  font-size: 1.05rem;
-  margin-bottom: 1.25rem;
-  color: #374151;
+.page-header p {
+  font-size: var(--text-lg);
+  max-width: 560px;
 }
 
-ul {
-  padding-left: 1.25rem;
+/* =================================================
+   SECTION DIVIDER
+   ================================================= */
+
+.section-label {
+  display: inline-block;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.75rem;
 }
 
-li {
-  margin-bottom: 0.6rem;
-}
-
-a {
-  color: #2563eb;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* =========================
-   HOME – EXPLORE SECTION
-   ========================= */
-
-.page ul li a {
-  font-weight: 500;
-}
-
-/* =========================
+/* =================================================
    PROJECTS GRID
-   ========================= */
+   ================================================= */
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-top: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
 }
 
-/* =========================
-   PROJECT CARD
-   ========================= */
+/* =================================================
+   SKILLS GRID
+   ================================================= */
 
-.project-card {
-  background-color: #ffffff;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-  padding: 1.25rem;
-
-  display: flex;
-  flex-direction: column;
+.skills-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
 }
 
-.project-card h2 {
-  margin-top: 0;
-}
-
-.project-card ul {
-  margin-bottom: 1rem;
-}
-
-.project-card span {
-  font-weight: 500;
+.skill-group h3 {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
   margin-bottom: 0.75rem;
-  color: #111827;
 }
 
-/* Project images – never cut */
-.project-card img {
-  width: 100%;
-  max-height: 200px;
-  object-fit: contain;
-  background-color: #f3f4f6;
-  border-radius: 6px;
-  margin-bottom: 1rem;
+.skill-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
-/* GitHub link sticks to bottom */
-.project-card a {
-  margin-top: auto;
+.skill-pill {
+  display: inline-block;
+  padding: 0.3rem 0.75rem;
+  background-color: var(--surface-2);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  font-size: var(--text-sm);
   font-weight: 500;
-  text-decoration: none;
+  transition: background-color var(--transition), color var(--transition),
+    border-color var(--transition);
 }
 
-/* =========================
-   CONTACT ICONS
-   ========================= */
-
-.icon-link {
-  display: inline-flex;
-  align-items: center;
-  margin-left: 0.5rem;
-}
-
-.icon-link img {
-  width: 22px;
-  height: 22px;
-}
-
-.icon-link:hover img {
-  opacity: 0.85;
+.skill-pill:hover {
+  background-color: var(--accent-glow);
+  color: var(--accent);
+  border-color: var(--accent);
 }

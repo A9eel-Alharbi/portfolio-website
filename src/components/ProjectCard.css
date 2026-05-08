@@ -1,0 +1,141 @@
+/* =================================================
+   PROJECT CARD
+   ================================================= */
+
+.project-card {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-card);
+    border-color: var(--surface-3);
+}
+
+/* Image */
+.project-card__image-wrap {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background-color: var(--surface-2);
+}
+
+.project-card__image-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 350ms ease;
+}
+
+.project-card:hover .project-card__image-wrap img {
+    transform: scale(1.04);
+}
+
+/* Body */
+.project-card__body {
+    padding: 1.25rem 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 0.75rem;
+}
+
+.project-card__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.75rem;
+}
+
+.project-card__title {
+    font-size: var(--text-lg);
+    font-weight: 600;
+    color: var(--text-primary);
+    line-height: 1.3;
+}
+
+/* Status badge */
+.status-badge {
+    flex-shrink: 0;
+    padding: 0.2rem 0.6rem;
+    border-radius: var(--radius-full);
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.status-badge--done {
+    background-color: rgba(52, 211, 153, 0.1);
+    color: var(--success);
+    border: 1px solid rgba(52, 211, 153, 0.25);
+}
+
+.status-badge--wip {
+    background-color: rgba(251, 191, 36, 0.1);
+    color: var(--warning);
+    border: 1px solid rgba(251, 191, 36, 0.25);
+}
+
+/* Description */
+.project-card__desc {
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
+    line-height: 1.6;
+    flex: 1;
+}
+
+/* Tech badges */
+.project-card__tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.tech-badge {
+    padding: 0.2rem 0.6rem;
+    border-radius: var(--radius-full);
+    font-size: 0.72rem;
+    font-weight: 500;
+    background-color: rgba(from var(--badge-color) r g b / 0.12);
+    color: var(--badge-color);
+    border: 1px solid rgba(from var(--badge-color) r g b / 0.25);
+    /* Fallback for browsers that don't support relative color syntax */
+    background-color: var(--surface-2);
+    color: var(--text-secondary);
+    border: 1px solid var(--border);
+}
+
+/* GitHub link */
+.project-card__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    margin-top: auto;
+    padding-top: 0.5rem;
+    font-size: var(--text-sm);
+    font-weight: 500;
+    color: var(--accent);
+    text-decoration: none;
+    transition: color var(--transition), gap var(--transition);
+}
+
+.project-card__link:hover {
+    color: var(--accent-dark);
+    gap: 0.65rem;
+}
+
+.project-card__link--disabled {
+    color: var(--text-secondary);
+    font-size: var(--text-sm);
+    font-weight: 400;
+    margin-top: auto;
+    padding-top: 0.5rem;
+    cursor: default;
+}

@@ -1,0 +1,35 @@
+.footer {
+    border-top: 1px solid var(--border);
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+}
+
+.footer-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-copy {
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
+}
+
+.footer-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-icon-link {
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    transition: color var(--transition);
+}
+
+.footer-icon-link:hover {
+    color: var(--accent);
+}
